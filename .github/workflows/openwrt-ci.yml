@@ -10,13 +10,11 @@
 name: OpenWrt-孔慰编译版本20.02.26
 
 on:
+  schedule:
+    - cron: 0 20 * * *
 push:
   branches: 
     - master
-  # schedule:
-  #   - cron: 0 20 * * *
-  # release:
-  #   types: [published]
 
 jobs:
   build:
